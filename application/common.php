@@ -10,3 +10,15 @@
 // +----------------------------------------------------------------------
 
 // 应用公共文件
+/**
+ *
+ */
+function show($status,$msg,$data=[],$httpCode=200)
+{
+	$data = [
+			'status' => $status,
+			'msg'  => $msg,
+			'data'  => $data,
+		];
+	return json($data,$httpCode);
+}
