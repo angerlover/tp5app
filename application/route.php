@@ -26,3 +26,4 @@ use think\Route;
 // Route::put('test/:id','app\api\controller\Index@update'); // 修改
 
 Route::resource('blog','api/Index');
+Route::resource('category/:ver','api/:ver.Category');
